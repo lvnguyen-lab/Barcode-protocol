@@ -1,13 +1,18 @@
+#!/bin/bash
+#SBATCH -t 2-00:00:00
+#SBATCH --mem=180G
+#SBATCH -J assoc_bc_steps
+#SBATCH -p veryhimem
+#SBATCH -c 10
+#SBATCH -N 1
+#SBATCH --mail-type=END
+#SBATCH --mail-user=sarah.kronheim@uhn.ca
+#SBATCH -o %x-%j.out
+
 # Load specific run's parameters 
 WD=$(pwd -P)
-PARAMS_FN=$WD/scRNA_params.sh
-if [ ! -e $PARAMS_FN ]
-then
-        echo "Error: missing parameters file ($PARAMS_FN)"
-        exit 1
-else bnvm  
-        source $PARAMS_FN
-fi
+BASE_DIR=/cluster/projects/nguyengroup/scRNAseq
+RUN_NAME=$1
 
 if [ "$WD" != "$BASE_DIR/runs/$RUN_NAME" ]
 then
