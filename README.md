@@ -8,7 +8,8 @@ c. Levenshtein.sh
 d. Levenshtein_txt.R
 
 To associate single cell RNA profiles from single cell RNA sequencing with DNA barcodes, you will need to follow the steps in the custom analysis pipeline "assoc_bcs_steps.sh". It requires the following files:
-a. assoc_bcs_steps.sh
-b. associate_barcodes_with_10x_cells.R
-c. Levenshtein.R
-d. fa_csv.R
+a. associate_barcodes_with_10x_cells.R
+b. Levenshtein.R
+c. fa_csv.R
+
+The file SLX-22131.HL2NCDSX3.s_1.contents.csv is an example metadata file. There should be only one metadata file in location "$BASE_DIR/runs/$RUN_NAME/metadata". All samples for the run can be included in this one file.
