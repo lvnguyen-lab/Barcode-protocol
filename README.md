@@ -1,5 +1,5 @@
 # Barcode-protocol
-Protocol to track single cell derived clones using DNA barcoding combined with single cell RNA sequencing
+As published in Shin HJ et al. Protocol to track single-cell-derived clones using DNA barcoding combined with single-cell RNA sequencing. STAR Protocols 2025. PMID: 41317321, DOI: 10.1016/j.xpro.2025.104229
 
 For computational analysis of barcode DNA amplicon sequencing, you will need to run the script "amplicon_analysis.sh". It requires the following files:
 a. amplicon_analysis.sh
